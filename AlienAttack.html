@@ -1,0 +1,46 @@
+<html>
+
+<head>
+	<title>Super Alien Attack!</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&family=Press+Start+2P&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="AlienAttack.css">
+	<link rel="icon" type="image/png" href="./Images/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="./Images/favicon-16x16.png" sizes="16x16" />
+	<script src="./JS/jquery.min.js"></script>
+	<script type="text/javascript" src="./JS/AlienAttack.js"></script>
+</head>
+
+<body>
+	<div id='container' class="container">
+		
+		<div id='titleScreen'>
+			<h2 id='title'> Super Alien Attack! </h2>
+			<img src="./Images/explosionReal.png" alt="explosion" height="700px" id='exp1'>
+			<img src="./Images/explosionReal.png" alt="explosion" height="500px" id='exp3'>
+			<img src="./Images/plane.png" alt="plane" height="500px" id='plane'>
+			<img src="./Images/explosionReal.png" alt="explosion" height="600px" id='exp2'>
+			<button id='sbutton'> START </button>
+		</div>
+
+		<div id='hero' style='top:300px; left:300px;'></div>
+		<div id='enemies'></div>
+		<div id='enemyBullets'></div>
+		<div id='bossBullets'></div>
+		<div id='bullets'></div>
+		<div id='explosions'></div>
+		<div id='bosses'></div>
+
+		<h1 id='youDied' style="visibility: hidden;">Game Over</h1>
+		<button id='button'> Start Game </button>
+		<button id="restart"> Restart </button>
+	
+	</div>
+	<div id='score'>0</div>
+	<div class="lifeBar" id='liveBar'>
+		<div id='lives'></div>
+	</div>
+
+</body>
+
+</html>

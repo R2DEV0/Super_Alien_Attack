@@ -1,0 +1,267 @@
+html,body{
+    background: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+    ),
+    url('./Images/cloud_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Press Start 2P', cursive;
+    margin: 0 auto;
+    height: 100%;
+    overflow: hidden;
+}
+#titleScreen{
+    /* background-color: rgb(157, 197, 223); */
+    background: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+    ),
+    url('./Images/cloud_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+.container{
+    background: url('./Images/cloud_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:100%;
+    position: relative;
+}
+
+.container-boss{
+    background: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+    ),
+    url('./Images/cloud_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:100%;
+    position: relative;
+}
+#hero{
+    background: url('./Images/player.gif');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:75px;
+    height:75px;
+    position:absolute;
+}
+.enemy1{
+    background: url('./Images/enemy.gif');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:110px;
+    height:110px;
+    position:absolute;
+}
+.boss{
+    background: url('./Images/ship.gif');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:1300px;
+    height:500px;
+    position:absolute;
+}
+.bullet{
+    background: url('./Images/1942.gif');
+    background-position: -185px -400px;
+    width:20px;
+    height:20px;
+    position:absolute;
+}
+.enemyBullet{
+    background: url('./Images/laser.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:20px;
+    height:20px;
+    position:absolute;
+}
+.bossBullet{
+    background: url('./Images/laser.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:30px;
+    height:30px;
+    position:absolute;
+}
+.explosion{
+    background: url('./Images/explosion.gif');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:110px;
+    height:110px;
+    position:absolute;
+}
+#score{
+    font-family: 'Press Start 2P', cursive !important; 
+    position:absolute;
+    border: 8px solid red;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+    bottom: 13%;
+    right: 1%;
+    background-color:white;
+    padding:10px;
+    font-size:25px;
+}
+#button{
+    font-size: 17px;
+    font-family: 'Press Start 2P', cursive;
+    background-color: red;
+    color: white;
+    height: 50px;
+    width: 250px;
+    border-radius: 5px;
+    border: 3px solid black;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    box-shadow: 3px 3px 5px black;
+}
+.lifeBar{
+    position: absolute;
+    bottom: 4%;
+    right: 1%;
+    min-height: 50px;
+    min-width: 45px;
+    background-color:white;
+    padding:5px 5px 0px 5px;
+    font-family: 'Press Start 2P', cursive;
+    border: 8px solid red;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+}
+.life{
+    height: 35px;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#button:hover{
+    background-color: lightcoral;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#sbutton{
+    font-size: 17px;
+    font-family: 'Press Start 2P', cursive;
+    background-color: red;
+    color: white;
+    height: 50px;
+    width: 250px;
+    border-radius: 5px;
+    border: 3px solid black;
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    box-shadow: 3px 3px 5px black;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    animation: changeColor 1s infinite;
+}
+
+@keyframes changeColor {
+    0% {color: white;}
+    50% {color: red;}
+    100% {color: white;}
+} 
+
+#sbutton:hover{
+    background-color: lightcoral;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#restart{
+    font-size: 17px;
+    font-family: 'Press Start 2P', cursive;
+    background-color: green;
+    color: white;
+    height: 50px;
+    width: 250px;
+    border-radius: 5px;
+    border: 3px solid black;
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    box-shadow: 3px 3px 5px black;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+#restart:hover{
+    background-color: lightgreen;
+    cursor: pointer;
+    font-weight: bold;
+}
+#exp1{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+#exp2{
+    position: absolute;
+    right: 50;
+}
+#exp3{
+    position: absolute;
+    top: 450px;
+    right: 600px;
+}
+#plane{
+    position: absolute;
+    right: 50;
+    top: 50%;
+}
+#title{
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    text-shadow: 0px 0px 20px greenyellow;
+    animation: color-shadow 1s infinite;
+}
+@keyframes color-shadow {
+    0% { text-shadow: 0px 0px 20px greenyellow; }
+    25% { text-shadow: 0px 0px 25px yellow; }
+    50% { text-shadow: 0px 0px 20px greenyellow; }
+    75% { text-shadow: 0px 0px 25px yellow; }
+    100% { text-shadow: 0px 0px 20px greenyellow; }
+}
+
+#youDied{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 40px;
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-shadow: 3px 3px 5px gray;
+}
