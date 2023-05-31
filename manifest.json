@@ -2,14 +2,5 @@
     "manifest_version": 2,
     "name": "Super Alien Attack!",
     "description": "Save the World from Aliens!",
-    "version": "1.0.6",
-    "browser_action":{
-    },
-    "permissions":[
-        "tabs"
-    ],
-    "background": {
-        "scripts": ["./JS/background.js"]
-    },
-    "icons":{"128": "./Images/icon128.png"}
+    "version": "1.2.0"
 }
