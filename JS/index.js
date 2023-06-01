@@ -3,7 +3,11 @@ document.addEventListener('DOMContentLoaded', function() {
     var GameRestarted = document.getElementById('button');
     var restartB = document.getElementById('restart');
     var menuMusic = new sound('./Sounds/Venus.wav');
-    menuMusic.play();
+    
+    $( document.body ).click(function() {
+        menuMusic.play();
+    });
+    
     GameStarted.addEventListener('click', function() {
         startGame();
         menuMusic.stop();
